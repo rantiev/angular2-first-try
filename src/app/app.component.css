@@ -1,0 +1,38 @@
+.to-do-app {
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+.app-header {
+    padding: 0 0 0 0;
+}
+
+.app-header h1 {
+    margin-bottom: 0;
+}
+
+.toDoList {
+    padding: 0 0 20px 0;
+}
+
+.comletedList {
+    padding: 20px 0;
+}
+
+.completed md-checkbox {
+    text-decoration: line-through;
+}
+
+.btn-edit {
+    width: 20px;
+    height: 20px;
+
+    margin: 0 0 0 10px;
+
+    line-height: 20px;
+}
+
+.input-wide {
+    width: 100%;
+}
