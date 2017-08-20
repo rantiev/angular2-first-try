@@ -1,17 +1,3 @@
-.to-do-app {
-    max-width: 900px;
-    margin: 100px auto;
-    padding: 0 20px;
-}
-
-.app-header {
-    padding: 0 0 0 0;
-}
-
-.app-header h1 {
-    margin-bottom: 0;
-}
-
 .toDoList {
     padding: 0 0 20px 0;
 }

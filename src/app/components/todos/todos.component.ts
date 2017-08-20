@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-todos',
+  templateUrl: './todos.component.html',
+  styleUrls: ['./todos.component.css']
 })
-export class AppComponent {
-  title = 'app';
+export class TodosComponent {
 
   newToDo = {
     title: null,
@@ -31,12 +30,10 @@ export class AppComponent {
   completedList = []
   hasNotArchivedCompleted = false
 
-  btnActive = true
-
   complete (item) {
     item.completed = !item.completed;
 
-    this.hasNotArchivedCompleted = true
+    this.hasNotArchivedCompleted = this.toDoList.some(x => x.completed)
   }
 
   archiveCompleted() {
@@ -71,4 +68,5 @@ export class AppComponent {
   edit (item) {
     this.newToDo = item;
   }
+
 }
